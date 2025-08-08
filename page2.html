@@ -150,4 +150,9 @@
   
   <input name="animation" type="hidden">
   </body>
+  <script>
+  if (location.protocol !== 'https:') {
+    location.href = 'https://' + location.hostname + location.pathname + location.search;
+  }
+</script>
 </html>
